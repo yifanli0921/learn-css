@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        span {
+            margin-right: 50px;
+        }
+        span[title] {
+            border-bottom: 1px solid;
+        }
+        span[title~='too'] {
+            border-bottom: 1px solid lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <span title="I'm title">悬停试试</span>
+    <span>悬停试试</span>
+    <span title="I'm title, too">悬停试试</span>
+</body>
+</html>
