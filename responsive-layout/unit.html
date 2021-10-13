@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Unit</title>
+    <style>
+        p {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .example {
+            margin: 8px;
+            padding: 24px;
+            border: 2px solid #f65e78;
+            background-color: #eee;
+            font-size: 32px;
+        }
+        .example p {
+            position: relative;
+            border: 1px dotted #000000;
+        }
+        .example p span {
+            color: white;
+            background-color: #f65e78;
+        }
+        .unit-px p {
+            width: 500px;
+            left: 16px;
+            padding: 16px;
+            font-size: 32px;
+        }
+        .unit-percent p {   /* 思考这些百分比是相对于什么？*/
+            width: 50%;
+            left: 2%;
+            font-size: 50%;
+            padding: 1%;
+        }
+        .unit-em p {
+            width: 20em;
+            left: 1em;
+            font-size: 1em;
+            padding: 0.5em;
+        }
+        .unit-rem p {
+            width: 20rem;
+            left: 1rem;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        .unit-viewport p:first-child {
+            font-size: 10vw;
+        }
+        .unit-viewport p:last-child {
+            font-size: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="example unit-px">
+        <p>单位：<span>32px</span></p>
+    </div>
+    <div class="example unit-percent">
+        <p>单位：<span>百分比 50%</span></p>
+    </div>
+    <div class="example unit-em">
+        <p>单位：<span>1em</span></p>
+    </div>
+    <div class="example unit-rem">
+        <p>单位：<span>2rem</span></p>
+    </div>
+    <div class="example unit-viewport">
+        <p>单位：10vw</p>
+        <p>单位：10vh</p>
+    </div>
+</body>
+</html>
