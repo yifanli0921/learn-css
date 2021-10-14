@@ -9,69 +9,77 @@
             margin: 0;
             box-sizing: border-box;
         }
+        body {
+            display: flex;
+            justify-content: center;
+        }
         .example {
             margin: 8px;
             padding: 24px;
-            border: 2px solid #f65e78;
             background-color: #eee;
-            font-size: 32px;
         }
         .example p {
-            position: relative;
-            border: 1px dotted #000000;
+            margin: 16px 0;
+            font-size: 24px;
         }
-        .example p span {
-            color: white;
-            background-color: #f65e78;
+        .example div {
+            display: inline-block;
+            color: #fff;
+            background-color: #fc6079;
+            text-align: center;
         }
-        .unit-px p {
-            width: 500px;
-            left: 16px;
-            padding: 16px;
-            font-size: 32px;
+
+        .unit-px {
+            font-size: 24px;
+            padding: 12px;
         }
-        .unit-percent p {   /* 思考这些百分比是相对于什么？*/
-            width: 50%;
-            left: 2%;
-            font-size: 50%;
-            padding: 1%;
+        .unit-percent {
+            font-size: 150%;
+            padding: 10%;
         }
-        .unit-em p {
-            width: 20em;
-            left: 1em;
-            font-size: 1em;
+        .unit-em {
+            font-size: 1.5em;
             padding: 0.5em;
         }
-        .unit-rem p {
-            width: 20rem;
-            left: 1rem;
-            font-size: 2rem;
-            padding: 1rem;
+        .unit-rem {
+            font-size: 1.5rem;
+            padding: 0.75rem;
         }
-        .unit-viewport p:first-child {
-            font-size: 10vw;
-        }
-        .unit-viewport p:last-child {
-            font-size: 10vh;
+        .unit-vm {
+            font-size: 2.4vw;
+            padding: 1.2vw;
         }
     </style>
 </head>
 <body>
-    <div class="example unit-px">
-        <p>单位：<span>32px</span></p>
+    <div class="example">
+        <p>PX</p>
+        <p> font-size: 24px;</p><p> padding: 12px;</p>
+        <div class="unit-px">Unit</div>
     </div>
-    <div class="example unit-percent">
-        <p>单位：<span>百分比 50%</span></p>
-    </div>
-    <div class="example unit-em">
-        <p>单位：<span>1em</span></p>
-    </div>
-    <div class="example unit-rem">
-        <p>单位：<span>2rem</span></p>
-    </div>
-    <div class="example unit-viewport">
-        <p>单位：10vw</p>
-        <p>单位：10vh</p>
-    </div>
+<!--    <div class="example">-->
+<!--        <p>Percentage</p>-->
+<!--        <p>font-size: 150%;</p>-->
+<!--        <p>padding: 10%;</p>-->
+<!--        <div class="unit-percent">Unit</div>-->
+<!--    </div>-->
+<!--    <div class="example">-->
+<!--        <p>EM</p>-->
+<!--        <p>font-size: 1.5em;</p>-->
+<!--        <p>padding: 0.5em;</p>-->
+<!--        <div class="unit-em">Unit</div>-->
+<!--    </div>-->
+<!--    <div class="example">-->
+<!--        <p>REM</p>-->
+<!--        <p>font-size: 1.5rem;</p>-->
+<!--        <p>padding: 0.75rem;</p>-->
+<!--        <div class="unit-rem">Unit</div>-->
+<!--    </div>-->
+<!--    <div class="example">-->
+<!--        <p>VW</p>-->
+<!--        <p>font-size: 2.4vw;</p>-->
+<!--        <p>padding: 1.2vw;</p>-->
+<!--        <div class="unit-vm">Unit</div>-->
+<!--    </div>-->
 </body>
 </html>
