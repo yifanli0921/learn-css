@@ -55,9 +55,10 @@
             font-weight: 700;
         }
         .article {
-            float: left;
+            box-sizing: border-box;
+            margin: 0 200px;
+            overflow: hidden;
             padding: 0 10px 20px;
-            width: calc(100% - 422px);
             border-left: 1px solid silver;
             border-right: 1px solid silver;
         }
@@ -70,7 +71,7 @@
             line-height: 20px;
         }
         .sidebar {
-            float: left;
+            float: right;
             padding: 10px;
             width: 180px;
         }
@@ -83,7 +84,6 @@
             margin-top: 10px;
         }
         footer {
-            clear: both;
             padding: 20px 40px;
             background-color: silver;
         }
@@ -102,6 +102,13 @@
                    <li><a href="#">About</a></li>
                </ul>
            </nav>
+           <div class="sidebar">
+               <p>Read more</p>
+               <ul>
+                   <li><a href="#">Getting started with CSS</a></li>
+                   <li><a href="#">How CSS is structured</a></li>
+               </ul>
+           </div>
            <section class="article">
                <h1>What is CSS?</h1>
                <p>CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is, with a simple syntax example, and also covers some key terms about the language.</p>
@@ -111,13 +118,6 @@
                <p>As there are so many things that you could style using CSS, the language is broken down into modules. You'll see reference to these modules as you explore MDN and many of the documentation pages are organized around a particular module. For example, you could take a look at the MDN reference to the Backgrounds and Borders module to find out what its purpose is, and what different properties and other features it contains. You will also find links to the CSS Specification that defines the technology (see below).</p>
                <p>As a newcomer to CSS, it is likely that you will find the CSS specs overwhelming — they are intended for engineers to use to implement support for the features in user agents, not for web developers to read to understand CSS. Many experienced developers would much rather refer to MDN documentation or other tutorials. It is however worth knowing that they exist, understanding the relationship between the CSS you are using, browser support (see below), and the specs.</p>
            </section>
-           <div class="sidebar">
-               <p>Read more</p>
-               <ul>
-                   <li><a href="#">Getting started with CSS</a></li>
-                   <li><a href="#">How CSS is structured</a></li>
-               </ul>
-           </div>
        </main>
        <footer>Footer</footer>
     </div>

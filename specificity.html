@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="`en`">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,11 +8,21 @@
     <title>Document</title>
     <style>
         p {
-            font-size: 20px;
+            color: #4CAF50;
+        }
+        .class1 {
+            color: #bd4257;
+        }
+        .class1.class2 {
+            color: cornflowerblue;
+        }
+        #id {
+            color: lightseagreen;
         }
     </style>
 </head>
 <body>
-    <p>使用style设置css样式</p>
+<!--color: #4CAF50 !important;-->
+    <p class="class1 class2" id="id" style="color: salmon">I am a paragraph</p>
 </body>
 </html>
