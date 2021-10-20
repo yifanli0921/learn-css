@@ -5,19 +5,26 @@
     .main {
         width: 100%;
     }
-    /*
-    .top-bar-text {
-        font-size: 16px;
-    }
+    /*.top-bar-text {*/
+    /*    font-size: 16px;*/
+    /*}*/
+    /*.header {*/
+    /*    padding: 32px;*/
+    /*}*/
+    /*.header-title {*/
+    /*    margin-bottom: 8px;*/
+    /*    font-size: 32px;*/
+    /*}*/
+    /*.header-subtitle {*/
+    /*    font-size: 16px;*/
+    /*}*/
+}
 
-    .header {
-        padding: 32px;
+@media only screen and (min-width: 1200px) {
+    .main {
+        display: flex;
     }
-    .header-title {
-        margin-bottom: 8px;
-        font-size: 32px;
+    .block {
+        margin:0 1rem;
     }
-    .header-subtitle {
-        font-size: 16px;
-    }*/
 }

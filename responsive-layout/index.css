@@ -28,9 +28,9 @@ h1,h2,h3,h4,h5,h6,p,div {
 
 .nav-bar {
     background-color: #333;
+    display: flex;
 }
 .nav-bar a {
-    display: inline-block;
     padding: 14px 20px;
     font-size: 18px;
     text-decoration: none;
@@ -44,6 +44,7 @@ h1,h2,h3,h4,h5,h6,p,div {
 
 .main {
     margin: 48px auto auto;
+    width: 1000px;
 }
 .block {
     margin-bottom: 32px;
@@ -57,4 +58,7 @@ h1,h2,h3,h4,h5,h6,p,div {
 .block-content {
     margin-top: 16px;
     font-size: 16px;
+}
+.img {
+    width: 800px;
 }
