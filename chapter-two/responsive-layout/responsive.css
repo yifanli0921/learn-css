@@ -91,6 +91,9 @@ h1,h2,h3,h4,h5,h6,p,div {
     html {
         font-size: calc(100/375 * 12vw);  /* mobile 以设计图iphone X尺寸为例： 1px = 100/375vw  12px = 3.2vw = 1rem */
     }
+    .nav-bar {
+        display: block;
+    }
     .nav-bar a {
         display: block;
     }
