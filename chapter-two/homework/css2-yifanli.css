@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-body {
+    top: 0.5rem;
+}
+.top {
+    position: fixed;
+    top: 0;
+    font-size: 1.2rem;
+    box-shadow: 0 3px silver;
+    z-index: 1;
+    width: 100%;
+    height: 3%;
+    background-color: white;
+}
+.top-left {
+    margin-left: 0.16rem;
+}
+.top-right {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+.nav {
+    color: black;
+    text-decoration: none;
+    padding:0 0.1rem;
+}
+
+a:hover {
+    background-color: gray;
+}
+h3{
+    margin-bottom: 0.3rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.box-wrapper {
+    display: flex;
+    padding-left: 0.15rem;
+    overflow: auto;
+    margin-bottom: 0.1rem;
+    margin-top: 1rem;
+}
+.box {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    max-width: 800px;
+}
+@media (max-width: 767px) {
+    .box-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .box {
+        padding-right: 0.1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .box-wrapper {
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 46%;
+    }
+}
+.tag {
+    position: absolute;
+    padding: 0.3rem ;
+    bottom: 0.24rem;
+    right: 0;
+    background-color: darkgray;
+    color: #ffffff;
+}
+
+.about-box {
+    padding-left: 0.16rem;
+}
+
+.detail{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+.person-title {
+    display: inline-block;
+    margin: 1.5rem 0;
+}
+.bottom-icon {
+    text-align: center;
+    padding: 0.1rem;
+    width: 50%;
+    align-items: center;
+    background-color: darkgray;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.bottom-icon:hover {
+    background: #bd4257;
+}
+footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
